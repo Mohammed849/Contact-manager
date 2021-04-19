@@ -10,10 +10,12 @@ const connectDB = async () => {
       useFindAndModify: false,
       useUnifiedTopology: true,
     });
-    console.log('Mongodb is connected sucessfully');
+
+    console.log('MongoDB Connected...');
   } catch (err) {
     console.error(err.message);
     process.exit(1);
   }
 };
+
 module.exports = connectDB;
